@@ -11,36 +11,52 @@
       table td {
         padding: 0;
       }
-      img {
-        max-width: 100%;
-        height: auto;
+
+      /* Prevent images from scaling up */
+      .mylearning-logo .uwe-logo {
+        max-width: 50% !important;
+        height: auto !important;
       }
+
       .banner-text {
         text-align: center;
         color: #000;
         font-size: 16px;
         padding: 0 20px;
       }
+
+      /* CSS targeting Outlook */
+      @media only screen and (min-width: 480px) {
+        /* Adjust the width of the main email body */
+        .email-container {
+          width: 600px !important; /* Set your desired width */
+        }
+      }
     </style>
   </head>
   <body>
     <table
-      style="background-color: #f4f4f4"
-      border="0"
-      width="100%"
-      cellspacing="0"
-      cellpadding="0"
+      class="email-container"
+      style="
+        background-color: #e5eaea;
+        border-collapse: collapse;
+        border: 0;
+        width: 600px;
+        cellspacing: 0;
+        cellpadding: 0;
+        align: center;
+      "
     >
       <tbody>
         <tr>
-          <td style="padding: 5% 0" align="center">
+          <td style="padding: 5% 0; align=center">
             <!-- Main Email Body Table -->
             <table
-              style="background-color: #ffffff; border-collapse: collapse"
-              border="0"
-              width="600"
-              cellspacing="0"
-              cellpadding="0"
+              style="background-color: #ffffff; border-collapse: collapse;
+              border=0;
+              width=600;
+              cellspacing=0;
+              cellpadding=0"
             >
               <!-- Header with Logos -->
               <tbody>
@@ -50,9 +66,9 @@
                       background-color: #ffffff;
                       color: #ffffff;
                       text-align: center;
-                      padding: 20px;
+                      padding: 5px;
                       width: 600;
-                      height: 60px;
+                      height: 10;
                     "
                   >
                     <div
@@ -61,7 +77,6 @@
                         align-content: space-around;
                         padding: 10px;
                         width: 600;
-                        height: 60px;
                       "
                     >
                       <div
@@ -74,7 +89,13 @@
                       >
                         <a href="https://mylearning.uwe.ac.uk/">
                           <img
-                            style="vertical-align: middle; max-width: 50%"
+                            class="mylearning-logo"
+                            style="
+                              vertical-align: middle;
+                              max-width: 300px;
+                              width: 100%;
+                              height: auto;
+                            "
                             title="mylearning Logo"
                             src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/logo.png"
                             alt="mylearning Logo"
@@ -92,7 +113,8 @@
                       >
                         <a href="http://www.uwe.ac.uk">
                           <img
-                            style="vertical-align: middle; max-width: 30%"
+                            class="uwe-logo"
+                            style="vertical-align: middle; max-width: 50%"
                             title="UWE Bristol Logo"
                             src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/uwe_logo.png"
                             alt="UWE Bristol Logo"
@@ -177,11 +199,11 @@
                         background-color: #ffffff;
                         border-collapse: collapse;
                         text-align: center;
-                      "
-                      border="0"
-                      width="600"
-                      cellspacing="0"
-                      cellpadding="0"
+                      
+                      border=0;
+                      width=600;
+                      cellspacing=0;
+                      cellpadding=0"
                     >
                       <!-- First Row -->
                       <tbody>
