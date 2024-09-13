@@ -9,7 +9,7 @@
       integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
-<style>
+<style type="text/css">
       @media (max-width: 600px) {
         .table-responsive {
           display: block;
@@ -27,10 +27,44 @@
           margin: 0 auto 15px;
         }
       }
+
+          .gamification-notification-message {
+              padding: 16px 0 24px;
+          }
+          .gamification-notification-cta-btn:hover {
+              text-decoration: none;
+              color: rgba(255, 255, 255, 1);
+              background-color: #61989e;
+          }
+          .gamification-notification-cta-btn {
+              display: block;
+              text-align: center;
+              background-color: #1a9dac;
+              color: rgba(255, 255, 255, 1);
+              padding: 8px 16px;
+              border-radius: 2px;
+              box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+              border: none;
+              cursor: pointer;
+              line-height: 1.25em;
+              font-weight: 600;
+              font-size: 14px;
+              text-decoration: none;
+          }
+          .content {
+              margin: 15px 0 0 0;
+              padding: 0;
+              border: 0;
+              font-size: 100%;
+              font-family: "Open Sans", sans-serif;
+              vertical-align: baseline;
+              word-wrap: break-word;
+          }
+
     </style>
 
   </head>
-  <body style="margin: 0; padding: 0; background-color: #1a9dac; font-family: Arial, sans-serif;">
+  <body style="margin: 0; padding: 10; background-color: #1a9dac; font-family: Arial, sans-serif;">
     <!-- Outer Container with background -->
     <table align="center" width="100%" cellpadding="0" cellspacing="0" style="background-color: #1a9dac; padding: 20px 0;">
       <tr>
@@ -46,11 +80,13 @@
               border-collapse: collapse;
               border: 1px solid #ffffff;
               border-radius: 10px;
+              margin: 15px auto;
             "
           >
             <!-- Header -->
             <tr>
               <td align="center" style="padding: 20px 0">
+                
                 <a href="https://mylearning.uwe.ac.uk/">
                   <img
                     class="w-16"
@@ -75,10 +111,10 @@
             <!-- First Section -->
       <tr>
         <td align="center" style="padding: 20px">
-          <h2>Course complete</h2>
+          
           <img
-            src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/email_banners_3.png"
-            alt="Course complete. Your feedback is appreciated."
+            src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/Email images/digitalskills.png"
+            alt="A person using a laptop"
             width="600"
             style="display: block"
           />
@@ -89,6 +125,7 @@
               color: #000000;
               font-size: 16px;
               padding: 0 20px 0;
+              margin: 20px auto;
             "
           >
             <p>
@@ -96,52 +133,25 @@
                 >Dear [first_name],
               </span>
             </p>
-            <p style="font-size: 15px">
-              Thank you for attending the recent session of: <strong>[course_name]</strong>, which we hope you enjoyed.  
             
-          
-
-            </p>
-            <p style="line-height: 23px; font-size: 15px; padding: 0 0 2px">
-              <strong>If you have not done so already we would appreciate it if you took the time to complete our Feedback form, using the button below.</strong>
-     <table class="btn rounded-full px-6 w-full w-lg-48" role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-radius: 9999px; border-collapse: separate !important; width: 192px;" width="192">
-  <tbody>
-    <tr>
-      <td style="line-height: 24px; font-size: 16px; border-radius: 4px; width: 192px; margin: 0;" align="center" bgcolor="#1a9dac" width="192">
-        <a href="[course_link]" alt="Go to course" style="color: #000000; font-size: 16px; font-weight: 400; font-family: Helvetica, Arial, sans-serif; text-decoration: none; border-radius: 9999px; line-height: 20px; display: block; font-weight: normal; white-space: nowrap; background-color: #1a9dac; padding: 8px 24px; border: 1px solid #1a9dac;">
-          Feeddback Form
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-          </div>
-        </td>
-      </tr>
-
-   
-              
- 
-            
+<div class="content">
+  <p class="gamification-notification-message">
+    Congratulations! You have just earned a new badge: <br>
+    <strong>[badge_name]</strong>.
+  </p>
+  <div align="center" style="width:auto; height: auto;">[badge_image]</div>
+  <p class="gamification-notification-message"></p>
+  <a
+    class="gamification-notification-cta-btn"
+    href="[my_badges_url]"
+    target="_blank"
+    >Go to my badges</a
+  >
+</div>
 
       <!-- Footer -->
       <tr>
-        <td align="center" style="padding: 0px">
-          <p style="margin: 15px 0">
-            Your feedback and insights are hugely valuable as they help us review what we are doing well and also identify areas for development. 
-            <br>
-            If you have any queries please email,
-            <strong
-              ><a
-                style="text-decoration: none"
-                href="https://uweacuk.sharepoint.com/sites/staff-intranet-learning-development-centre/SitePages/MyLearning-Handbook-Guide.aspx?web=1"
-                >Learning and Development.
-              </a></strong
-            >
-          </p>
-
-
+        <td align="center" style="padding: 20px">
           <p style="margin: 15px 0">
             For more information visit the
             <strong
@@ -217,3 +227,6 @@
     </table>
   </body>
 </html>
+
+
+

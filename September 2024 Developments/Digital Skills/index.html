@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0; 
+            padding: 0; 
+            background-color: #1a9dac; /* Background colour of the email */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Default styles for larger screens */
+        p {
+            font-size: 15px;
+            margin: 20px 30px;
+            line-height: 23px;
+        }
+
+        /* Flex container for aligning sections side by side */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap; /* Ensures elements wrap on small screens */
+        }
+
+        .flex-item {
+            padding: 10px;
+            width: 48%; /* Make sure both items take up equal space */
+            text-align: center;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+
+        .flex-item img {
+            display: block;
+            margin: 0 auto;
+            height: 200px;
+            width: 150px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            display: block;
+            width: 192px;
+            margin: 0 auto; /* Horizontally center the button */
+        }
+
+        .btn a {
+            color: #000000;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #1a9dac;
+            padding: 8px 24px;
+            border: 1px solid #1a9dac;
+            border-radius: 9999px;
+            display: block;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+          /* Remove button outline on focus */
+        .btn a:focus {
+            outline: none;
+        }
+
+        /* Responsive styles for small screens */
+        @media only screen and (max-width: 600px) {
+            p {
+                font-size: 14px;
+                margin: 15px 20px;
+                line-height: 20px;
+            }
+
+            img {
+                width: 100%; /* Ensures images resize to fit smaller screens */
+                height: 40%;
+            }
+
+            .banner {
+                width: 100%; /* Ensures images resize to fit smaller screens */
+                height: 40%;
+            }
+
+            .logo {
+                width: auto;
+                height: 30%;
+            }
+
+            /* Container table responsive */
+            table[width="600"] {
+                width: 100%;
+            }
+       
+            .flex-item {
+                width: 100%; /* Stack elements vertically on small screens */
+                padding: 15px 0;
+            }
+
+            .flex-item img {
+                height: auto;
+                width: 80%; /* Adjust image size for smaller screens */
+            }
+
+            .btn {
+                width: auto;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .btn a {
+                padding: 12px 24px; /* Adjust padding */
+                width: 100%; /* Ensure button stretches across the screen */
+                box-sizing: border-box; /* Ensure padding is inside the width */
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+    </head>
+
+    <body style="margin: 0; padding: 0; background-color: #1a9dac; font-family: Arial, sans-serif;">
+
+        <!--Contaniner with background. The background colour below is for a border around the white-->
+        <table align="center" width="100%" cellpadding="0" cellspacing="0" style="background-color: #1a9dac; padding: 0px 0; margin: 40px auto; ">
+            <tr>
+                <td align="center">
+                    <table algin="center" width="600" cellpadding="0" cellspacing="0"
+                    style="
+                    background-color: #ffffff;
+                    border-collapse: collapse;
+                    border: 1px solid #ffffff;
+                    border-radius: 4px;
+                    ">
+
+                <!--Header-->
+                 <tr>
+              <td align="center" style="padding: 20px 0">
+                <!--MyLearning logo--> 
+                <a href="https://mylearning.uwe.ac.uk/">
+                  <img
+                    class="w-16 logo"
+                    src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/logo.png"
+                    alt="Mylearning logo"
+                    style="
+                      height: auto;
+                      line-height: 50%;
+                      outline: none;
+                      text-decoration: none;
+                      display: block;
+                      width: 400px;
+                      border-style: none;
+                      border-width: 0;
+                    "
+                    width="100"
+                  />
+                </a>
+              </td>
+            </tr>
+        </td>
+    </tr>  
+    
+    <!-- First Section (Banner image) -->
+      <tr>
+        <td align="center" style="padding: 0px">
+          
+          <img class="banner"
+            src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/Email images/digitalskills.png"
+            alt="A person using a laptop"
+            title="A person using a laptop"
+            width="600"
+            style="display: block"
+          />
+          <div
+            class="banner-text"
+            style="
+              text-align: center;
+              color: #000000;
+              font-size: 16px;
+              padding: 0 0px 0;
+              margin: 20px auto; /* This line determines the space under the image */
+            "
+          >
+
+          <!--Welcome text to go under the banner image-->
+          <p>
+              <span style="color: #000000; font-weight: bold; font-size: 20px;"
+                >Dear [first_name],
+              </span>
+            </p>
+            <p style="font-size: 15px; margin: 20px 20px;">
+              This is to confirm that you are booked on to:
+              <strong>[learningplan_name]</strong>.
+            </p>
+            <p style="line-height: 23px; font-size: 15px; padding: 0 0 2px;  margin: 20px 30px;"">
+              This Learning Plan comprises of webinars and eLearning modules
+              that cover the
+              <strong>Bronze and Silver Digital Skills programme.</strong>
+            </p>
+            <p style="line-height: 23px; font-size: 15px; padding: 0 0 2px;  margin: 20px 30px;"">
+              To obtain your Bronze Digital Skills Badge, please complete
+              <a style="text-decoration: none" href="[learningplan_url]">
+                <strong>ICT Proficiency and Productivity</strong>
+              </a>
+              and one other module.
+            </p>
+          </div>
+        </td>
+      </tr>
+
+       <!-- Pre-work and Accessibility Section -->
+                    <tr>
+                        <td style="padding: 20px">
+                             <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            style="border-collapse: collapse"
+          >
+                            <div class="flex-container">
+                                <!-- Pre-work Section -->
+                                <div class="flex-item">
+                                    <img src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/Digital Skills Email Icons/stuck_at_home___sitting_on_floor__colors_.png" alt="A person sat on the floor using a laptop" />
+                                    <h3 style="margin: 10px 0">Pre-work and Training Materials</h3>
+                                    <p>This course may have pre-work or handouts available for you to view prior to the session. <br> <strong>Check this by selecting the content tab</strong>.</p>
+                                    <table class="btn">
+                                        <tr>
+                                            <td align="center" bgcolor="#1a9dac">
+                                                <a href="[course_link]" alt="Go to course">Go to Course</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <!-- Accessibility Section -->
+                                <div class="flex-item">
+                                    <img src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/26465/Digital Skills Email Icons/fitz___standing.png" alt="Image of a person in a wheelchair" />
+                                    <h3 style="margin: 10px 0">Accessibility adjustments</h3>
+                                    <p>Do you have any adjustments to support you to participate in the session/s you have signed up for? If so, please complete the <strong>Accessibility Form.</strong></p>
+                                    <table class="btn">
+                                        <tr>
+                                            <td align="center" bgcolor="#1a9dac">
+                                                <a href="https://forms.office.com/e/mX37KsyQp5" target="_blank">Accessibility Form</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+             
+    
+ <!-- Footer -->
+      <tr>
+        <td align="center" style="padding: 20px">
+          <p style="margin: 15px 0">
+            For more information visit the
+            <strong
+              ><a
+                style="text-decoration: none"
+                href="https://uweacuk.sharepoint.com/sites/staff-intranet-learning-development-centre/SitePages/MyLearning-Handbook-Guide.aspx?web=1"
+                >MyLearning FAQ page.
+              </a></strong
+            >
+          </p>
+
+          <hr style="border: 1px solid #ddd; width: 80%; margin: 20px auto" />
+          <p style="margin: 5px 0">
+            Learning and Development Centre | UWE Bristol
+          </p>
+          <p style="margin: 5px 0"></p>
+          <p style="color: rgb(0, 0, 0); margin: 0; font-size: 12px">
+            &copy; 2024 University of the West of England. All rights reserved.
+          </p>
+         <br>
+          <p style="text-align: center; width: auto">
+            <a
+              style="
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 10px;
+              "
+              href="mailto: ldc@uwe.ac.uk"
+              >Contact Us
+            </a>
+          </p>
+          <p>
+            <a
+              style="
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 10px;
+              "
+              href="https://uweacuk.sharepoint.com/sites/staff-intranet-learning-development-centre/SitePages/MyLearning-Handbook-Guide.aspx?web=1"
+              >FAQ
+            </a>
+          </p>
+          <p>
+            <a
+              style="
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 10px;
+              "
+              href="https://uweacuk.sharepoint.com/sites/staff-intranet-learning-development-centre/SitePages/booking-a-training-course.aspx#cancellation-process"
+              >Cancellation Process
+            </a>
+          </p>
+          <a href="http://www.uwe.ac.uk">
+            <img
+              style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;
+              "
+              src="https://cdn5.dcbstatic.com/files/m/h/mhr_uniwe_docebosaas_com/userfiles/uwe_logo.png"
+              alt="UWE Bristol Logo"
+              title="UWE Bristol Logo"
+              width="20%"
+            />
+          </a>
+        </td>
+      </tr>
+    </table>
+    
+</body>
+</html>
